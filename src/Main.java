@@ -2,7 +2,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Домашняя работа №1 Массивы");
         System.out.println("__________________Задача 1_____________________");
-        int [] weight = new int[3];
+        int[] weight = new int[3];
         weight[0] = 1;
         weight[1] = 2;
         weight[2] = 3;
@@ -16,55 +16,68 @@ public class Main {
 
         System.out.println();
 
-        int[] weight2 = {9,6,7};
+        int[] weight2 = {9, 6, 7};
 
         System.out.println("_______________________________________________");
 
         System.out.println("__________________Задача 2_____________________");
         for (int index = 0; index < weight.length; index++) {
             if (index == weight.length - 1) {
-                System.out.println(weight[index]);
+                System.out.println(weight[index] + " ");
                 break;
             }
-            System.out.print(weight[index] + " ");
+            System.out.print(weight[index] + ", ");
         }
         for (int index = 0; index < weight1.length; index++) {
             if (index == weight1.length - 1) {
-                System.out.println(weight1[index]);
+                System.out.println(weight1[index] + " ");
                 break;
             }
-            System.out.print(weight1[index] + " ");
+            System.out.print(weight1[index] + ", ");
         }
         for (int index = 0; index < weight2.length; index++) {
             if (index == weight2.length - 1) {
-                System.out.println(weight2[index]);
+                System.out.println(weight2[index] + " ");
                 break;
             }
-            System.out.print(weight2[index] + " ");
+            System.out.print(weight2[index] + ", ");
         }
+
+
         System.out.println("__________________Задача 3_____________________");
+
         for (int i = weight.length - 1; i >= 0; i--) {
-            System.out.print(weight[i]+" ");
+            if (i == 0) {
+                System.out.println(weight[i] + " ");
+                break;
+            }
+            System.out.print(weight[i] + ", ");
+
         }
-        System.out.println();
+
         for (int i = weight1.length - 1; i >= 0; i--) {
-            System.out.print(weight1[i]+" ");
+            if (i == 0) {
+                System.out.println(weight1[i] + " ");
+                break;
+            }
+            System.out.print(weight1[i] + ", ");
         }
-        System.out.println();
+
         for (int i = weight2.length - 1; i >= 0; i--) {
-            System.out.print(weight2[i]+" ");
+            if (i == 0) {
+                System.out.println(weight2[i] + " ");
+                break;
+            }
+            System.out.print(weight2[i] + ", ");
         }
-        System.out.println();
+
         System.out.println("_______________________________________________");
 
         System.out.println("__________________Задача 4_____________________");
 
-        int[] arrays = new int[10];
-        for(int i = 0; i < arrays.length; i++){
-            arrays[i]++;
-            if (i % 2 != 0){
-                i++;
-                System.out.print(i +" ");
+        for (int i = 0; i < weight.length; i++) {
+            if (i % 2 != 0) {
+                System.out.print(i + " ");
             }
         }
         System.out.println();
@@ -72,6 +85,7 @@ public class Main {
         System.out.println("_______________________________________________");
 
 
-
     }
+
+
 }
