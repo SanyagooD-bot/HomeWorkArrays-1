@@ -75,13 +75,16 @@ public class Main {
 
         System.out.println("__________________Задача 4_____________________");
 
-        for (int i = 0; i < weight.length; i++) {
-            if (i % 2 != 0) {
-                System.out.print(i + " ");
+        for (int i = 0; i < weight2.length; i++) {
+            if (weight2[i] % 2 != 0)
+                weight2[i] += 1;
+            if (i < weight2.length - 1)
+                System.out.print(weight2[i] + ", ");
+            else {
+                System.out.print(weight2[i]);
             }
         }
         System.out.println();
-
         System.out.println("_______________________________________________");
 
 
